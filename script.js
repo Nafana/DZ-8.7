@@ -18,7 +18,7 @@ maxValue = (maxValue<=-1000) ? 999 : maxValue;
 maxValue = (maxValue>= 1000) ? 999 : maxValue;
     if (maxValue == 999);
 
-
+    
 
 alert(`Загадайте любое целое число от ${minValue} до ${maxValue}, а я его угадаю`);
 let answerNumber  = Math.floor((minValue + maxValue) / 2);
@@ -30,8 +30,10 @@ const answerField = document.getElementById('answerField');
 
 
 
+
+
 orderNumberField.innerText = orderNumber;
-answerField.innerText = `Вы загадали число ${answerNumber }?`; 
+answerField.innerText = `Вы загадали число ${answerNumber}?`; 
 
 document.getElementById('btnOver').addEventListener('click', function () {
     if (gameRun){
